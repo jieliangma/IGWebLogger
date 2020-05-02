@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>IGWebLogger</title>
+        <link href="bootstrap/bootstrap.min.css" rel="stylesheet" media="screen"></link>
+        <link href="logger.css" rel="stylesheet" media="screen"></link>
+        <script type="text/javascript" src="jquery/jquery-3.5.0.min.js"></script>
+        <script type="text/javascript" src="vue.js"></script>
+        <!-- <script type="text/javascript" src="WebLogger.js"></script> -->
+    </head>
+    <body bgcolor="#FFFFFF">
+        <div class="container">
+            <div class="row">
+                <div id="app" class="span12">
+                    <textarea id="filter" v-model="filterText"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <div id="logger">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <button class="btn btn-primary" id="clear">Clear</button>
+                    <p id="status">
+                </div>
+            </div>
+        </div> <!-- /container -->
+
+        <script>
+            var vm = new Vue({
+                el: '#app',
+                data: {
+                    filterText: '.'
+                }
+            });
+
+            (function() {
+              var WebLogger;
+
+              WebLogger = (function() {
+
+                function WebLogger() {}
+
+                WebLogger.prototype.setConnected = function(connected) {
+                  this.connected = connected;
+                  if (connected) {
+                    return $("#status").text("connected").removeClass("warning");
+                  } else {
+                    return $("#status").text("disconnected").addClass("warning");
+                  }
+                };
+
+                WebLogger.prototype.log = function(message, level) {
+                  var div, html;
+                  if (level == null) {
+                    level = 'info';
+                  }
+                  html = $("<div/>").text(message).html();
+                  $("#logger").append("<p class='" + level + " log'>" + html + "</p>");
+                  div = $("#logger")[0];
+                  return div.scrollTop = div.scrollHeight;
+                };
+
+                WebLogger.prototype.filter = function(message, level) {
+                    var filterText = vm.$data.filterText;
+                    if (filterText == null || filterText == "") {
+                        return false;
+                    }
+
+                    var pattern = new RegExp(filterText);
+                    if (pattern.test(message)) {
+                        return this.log(message, level);
+                    }
+                    return false;
+                }
+                return WebLogger;
+              })();
+
+              $(document).ready(function() {
+                var logger, ws;
+                logger = new WebLogger();
+                $("#clear").on('click', function() {
+                  $("#logger").html("");
+                  return false;
+                });
+
+                if (("WebSocket" in window)) {
+                  ws = new WebSocket("%%WEBSOCKET_URL%%");
+                  ws.onopen = function() {
+                    console.log("connection open");
+                    return logger.setConnected(true);
+                  };
+                  ws.onclose = function() {
+                    console.log("connection closed");
+                    return logger.setConnected(false);
+                  };
+                  return ws.onmessage = function(evt) {
+                    var data;
+                    data = $.parseJSON(evt.data);
+                    if (data.message && data.level) {
+                      return logger.filter(data.message, data.level);
+                    } else {
+                      return console.log("unexpected data: ", evt.data);
+                    }
+                  };
+                } else {
+                  return alert("Your browser doesn't support WebSocket!");
+                }
+              });
+
+            }).call(this);
+        </script>
+    </body>
+</html>

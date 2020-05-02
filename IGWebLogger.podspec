@@ -9,9 +9,11 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/siuying/IGWebLogger.git', :tag => '0.2.0' }
   s.requires_arc = true
   s.platform = :ios, '5.0'
-  s.source_files = 'IGWebLogger/Classes/*.{m,h}'
-  s.resource = 'IGWebLogger/IGWebLogger.bundle'
+  s.source_files = 'IGWebLogger/**/*.{m,h}'
+  s.resource = 'IGWebLogger.bundle'
+  s.public_header_files = "IGWebLogger/IGWebLogger.h"
 
   s.dependency "CocoaLumberjack"
   s.dependency "CocoaHTTPServer", "~> 2.3"
+
 end

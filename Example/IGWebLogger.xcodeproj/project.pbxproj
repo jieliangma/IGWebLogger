@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		495AD4FD2953EEDF23BD1893 /* libPods-IGWebLoggerExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B76C81A1724319CCB5F608 /* libPods-IGWebLoggerExample.a */; };
+		542D8BC916E45D1500F27E63 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542D8BC816E45D1500F27E63 /* UIKit.framework */; };
+		542D8BCB16E45D1500F27E63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542D8BCA16E45D1500F27E63 /* Foundation.framework */; };
+		542D8BCD16E45D1500F27E63 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542D8BCC16E45D1500F27E63 /* CoreGraphics.framework */; };
+		542D8BD516E45D1500F27E63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 542D8BD416E45D1500F27E63 /* main.m */; };
+		542D8BD916E45D1500F27E63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 542D8BD816E45D1500F27E63 /* AppDelegate.m */; };
+		542D8BE216E45D1500F27E63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542D8BE116E45D1500F27E63 /* ViewController.m */; };
+		68D3C2F2245DDE2400ED945D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D3C2F1245DDE2400ED945D /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		542D8BC516E45D1500F27E63 /* IGWebLoggerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGWebLoggerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		542D8BC816E45D1500F27E63 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		542D8BCA16E45D1500F27E63 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		542D8BCC16E45D1500F27E63 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		542D8BD016E45D1500F27E63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		542D8BD416E45D1500F27E63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		542D8BD716E45D1500F27E63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		542D8BD816E45D1500F27E63 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		542D8BE016E45D1500F27E63 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		542D8BE116E45D1500F27E63 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		63759A48EEBFFEFD2F6C4415 /* Pods-IGWebLoggerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGWebLoggerExample.release.xcconfig"; path = "Target Support Files/Pods-IGWebLoggerExample/Pods-IGWebLoggerExample.release.xcconfig"; sourceTree = "<group>"; };
+		66ED94C684167C1E8BBF6280 /* Pods-IGWebLogger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGWebLogger.release.xcconfig"; path = "Target Support Files/Pods-IGWebLogger/Pods-IGWebLogger.release.xcconfig"; sourceTree = "<group>"; };
+		68D3C2F1245DDE2400ED945D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		71B666F515C34FE6D426D1C5 /* Pods-IGWebLogger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGWebLogger.debug.xcconfig"; path = "Target Support Files/Pods-IGWebLogger/Pods-IGWebLogger.debug.xcconfig"; sourceTree = "<group>"; };
+		E6B76C81A1724319CCB5F608 /* libPods-IGWebLoggerExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IGWebLoggerExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F78C1041BD5641FBBB470F83 /* Pods-IGWebLoggerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGWebLoggerExample.debug.xcconfig"; path = "Target Support Files/Pods-IGWebLoggerExample/Pods-IGWebLoggerExample.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		542D8BC216E45D1500F27E63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542D8BC916E45D1500F27E63 /* UIKit.framework in Frameworks */,
+				542D8BCB16E45D1500F27E63 /* Foundation.framework in Frameworks */,
+				542D8BCD16E45D1500F27E63 /* CoreGraphics.framework in Frameworks */,
+				495AD4FD2953EEDF23BD1893 /* libPods-IGWebLoggerExample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		542D8BBC16E45D1500F27E63 = {
+			isa = PBXGroup;
+			children = (
+				542D8BCE16E45D1500F27E63 /* IGWebLogger */,
+				542D8BC716E45D1500F27E63 /* Frameworks */,
+				542D8BC616E45D1500F27E63 /* Products */,
+				8E636F9FEE03E26638AE6A67 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		542D8BC616E45D1500F27E63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				542D8BC516E45D1500F27E63 /* IGWebLoggerExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		542D8BC716E45D1500F27E63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				542D8BC816E45D1500F27E63 /* UIKit.framework */,
+				542D8BCA16E45D1500F27E63 /* Foundation.framework */,
+				542D8BCC16E45D1500F27E63 /* CoreGraphics.framework */,
+				E6B76C81A1724319CCB5F608 /* libPods-IGWebLoggerExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		542D8BCE16E45D1500F27E63 /* IGWebLogger */ = {
+			isa = PBXGroup;
+			children = (
+				542D8BD716E45D1500F27E63 /* AppDelegate.h */,
+				542D8BD816E45D1500F27E63 /* AppDelegate.m */,
+				542D8BE016E45D1500F27E63 /* ViewController.h */,
+				542D8BE116E45D1500F27E63 /* ViewController.m */,
+				542D8BCF16E45D1500F27E63 /* Supporting Files */,
+			);
+			path = IGWebLogger;
+			sourceTree = "<group>";
+		};
+		542D8BCF16E45D1500F27E63 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68D3C2F1245DDE2400ED945D /* Images.xcassets */,
+				542D8BD016E45D1500F27E63 /* Info.plist */,
+				542D8BD416E45D1500F27E63 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E636F9FEE03E26638AE6A67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71B666F515C34FE6D426D1C5 /* Pods-IGWebLogger.debug.xcconfig */,
+				66ED94C684167C1E8BBF6280 /* Pods-IGWebLogger.release.xcconfig */,
+				F78C1041BD5641FBBB470F83 /* Pods-IGWebLoggerExample.debug.xcconfig */,
+				63759A48EEBFFEFD2F6C4415 /* Pods-IGWebLoggerExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		542D8BC416E45D1500F27E63 /* IGWebLoggerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 542D8BEB16E45D1500F27E63 /* Build configuration list for PBXNativeTarget "IGWebLoggerExample" */;
+			buildPhases = (
+				248DF30E7707651F2D95B0D9 /* [CP] Check Pods Manifest.lock */,
+				542D8BC116E45D1500F27E63 /* Sources */,
+				542D8BC216E45D1500F27E63 /* Frameworks */,
+				542D8BC316E45D1500F27E63 /* Resources */,
+				15E4EC05415617D548480A82 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IGWebLoggerExample;
+			productName = IGWebLogger;
+			productReference = 542D8BC516E45D1500F27E63 /* IGWebLoggerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		542D8BBD16E45D1500F27E63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Ignition Soft";
+			};
+			buildConfigurationList = 542D8BC016E45D1500F27E63 /* Build configuration list for PBXProject "IGWebLogger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 542D8BBC16E45D1500F27E63;
+			productRefGroup = 542D8BC616E45D1500F27E63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				542D8BC416E45D1500F27E63 /* IGWebLoggerExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		542D8BC316E45D1500F27E63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68D3C2F2245DDE2400ED945D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15E4EC05415617D548480A82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IGWebLoggerExample/Pods-IGWebLoggerExample-resources.sh",
+				"${PODS_ROOT}/../../IGWebLogger.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IGWebLogger.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IGWebLoggerExample/Pods-IGWebLoggerExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		248DF30E7707651F2D95B0D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IGWebLoggerExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		542D8BC116E45D1500F27E63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542D8BD516E45D1500F27E63 /* main.m in Sources */,
+				542D8BD916E45D1500F27E63 /* AppDelegate.m in Sources */,
+				542D8BE216E45D1500F27E63 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		542D8BE916E45D1500F27E63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		542D8BEA16E45D1500F27E63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		542D8BEC16E45D1500F27E63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F78C1041BD5641FBBB470F83 /* Pods-IGWebLoggerExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = IGWebLogger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hk.ignition.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		542D8BED16E45D1500F27E63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63759A48EEBFFEFD2F6C4415 /* Pods-IGWebLoggerExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = IGWebLogger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hk.ignition.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		542D8BC016E45D1500F27E63 /* Build configuration list for PBXProject "IGWebLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				542D8BE916E45D1500F27E63 /* Debug */,
+				542D8BEA16E45D1500F27E63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		542D8BEB16E45D1500F27E63 /* Build configuration list for PBXNativeTarget "IGWebLoggerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				542D8BEC16E45D1500F27E63 /* Debug */,
+				542D8BED16E45D1500F27E63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 542D8BBD16E45D1500F27E63 /* Project object */;
+}
