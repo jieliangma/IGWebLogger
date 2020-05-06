@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <CocoaLumberjack/CocoaLumberjack.h>
-#import <CocoaHTTPServer/WebSocket.h>
-#import <CocoaHTTPServer/HTTPServer.h>
 
+@class WebSocket;
+@class HTTPServer;
 @class IGWebLoggerWebSocket;
 
 @interface IGWebLogger : DDAbstractLogger <DDLogger, DDLogFormatter>

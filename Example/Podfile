@@ -4,9 +4,12 @@ install! 'cocoapods', :preserve_pod_file_structure => true
 
 platform :ios, '9.0'
 inhibit_all_warnings!
+use_frameworks!
 
 workspace 'IGWebLogger.xcworkspace'
 
 target 'IGWebLoggerExample' do
-  pod "IGWebLogger", :path => '../'
+  pod 'CocoaLumberjack'
+  pod 'IGWebLogger', :path => '../', :modular_headers => true
+  pod 'CocoaHTTPServer', :git => 'https://github.com/jieliangma/CocoaHTTPServer.git', :commit => '63adf69', :modular_headers => true
 end

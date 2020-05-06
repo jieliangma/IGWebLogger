@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		495AD4FD2953EEDF23BD1893 /* libPods-IGWebLoggerExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B76C81A1724319CCB5F608 /* libPods-IGWebLoggerExample.a */; };
+		2C641EEC6755346798287845 /* Pods_IGWebLoggerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D654063D7C050443D6F06B1 /* Pods_IGWebLoggerExample.framework */; };
 		542D8BC916E45D1500F27E63 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542D8BC816E45D1500F27E63 /* UIKit.framework */; };
 		542D8BCB16E45D1500F27E63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542D8BCA16E45D1500F27E63 /* Foundation.framework */; };
 		542D8BCD16E45D1500F27E63 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542D8BCC16E45D1500F27E63 /* CoreGraphics.framework */; };
@@ -31,8 +31,8 @@
 		63759A48EEBFFEFD2F6C4415 /* Pods-IGWebLoggerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGWebLoggerExample.release.xcconfig"; path = "Target Support Files/Pods-IGWebLoggerExample/Pods-IGWebLoggerExample.release.xcconfig"; sourceTree = "<group>"; };
 		66ED94C684167C1E8BBF6280 /* Pods-IGWebLogger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGWebLogger.release.xcconfig"; path = "Target Support Files/Pods-IGWebLogger/Pods-IGWebLogger.release.xcconfig"; sourceTree = "<group>"; };
 		68D3C2F1245DDE2400ED945D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6D654063D7C050443D6F06B1 /* Pods_IGWebLoggerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGWebLoggerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B666F515C34FE6D426D1C5 /* Pods-IGWebLogger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGWebLogger.debug.xcconfig"; path = "Target Support Files/Pods-IGWebLogger/Pods-IGWebLogger.debug.xcconfig"; sourceTree = "<group>"; };
-		E6B76C81A1724319CCB5F608 /* libPods-IGWebLoggerExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IGWebLoggerExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F78C1041BD5641FBBB470F83 /* Pods-IGWebLoggerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGWebLoggerExample.debug.xcconfig"; path = "Target Support Files/Pods-IGWebLoggerExample/Pods-IGWebLoggerExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,7 +44,7 @@
 				542D8BC916E45D1500F27E63 /* UIKit.framework in Frameworks */,
 				542D8BCB16E45D1500F27E63 /* Foundation.framework in Frameworks */,
 				542D8BCD16E45D1500F27E63 /* CoreGraphics.framework in Frameworks */,
-				495AD4FD2953EEDF23BD1893 /* libPods-IGWebLoggerExample.a in Frameworks */,
+				2C641EEC6755346798287845 /* Pods_IGWebLoggerExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +75,7 @@
 				542D8BC816E45D1500F27E63 /* UIKit.framework */,
 				542D8BCA16E45D1500F27E63 /* Foundation.framework */,
 				542D8BCC16E45D1500F27E63 /* CoreGraphics.framework */,
-				E6B76C81A1724319CCB5F608 /* libPods-IGWebLoggerExample.a */,
+				6D654063D7C050443D6F06B1 /* Pods_IGWebLoggerExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -124,7 +124,7 @@
 				542D8BC116E45D1500F27E63 /* Sources */,
 				542D8BC216E45D1500F27E63 /* Frameworks */,
 				542D8BC316E45D1500F27E63 /* Resources */,
-				15E4EC05415617D548480A82 /* [CP] Copy Pods Resources */,
+				3D9E1F0E4B9227F6BE5F0206 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,6 +143,12 @@
 			attributes = {
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Ignition Soft";
+				TargetAttributes = {
+					542D8BC416E45D1500F27E63 = {
+						DevelopmentTeam = E56PJSX4T7;
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = 542D8BC016E45D1500F27E63 /* Build configuration list for PBXProject "IGWebLogger" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -174,24 +180,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		15E4EC05415617D548480A82 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IGWebLoggerExample/Pods-IGWebLoggerExample-resources.sh",
-				"${PODS_ROOT}/../../IGWebLogger.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IGWebLogger.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IGWebLoggerExample/Pods-IGWebLoggerExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		248DF30E7707651F2D95B0D9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,6 +200,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D9E1F0E4B9227F6BE5F0206 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IGWebLoggerExample/Pods-IGWebLoggerExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaHTTPServer/CocoaHTTPServer.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/IGWebLogger/IGWebLogger.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaHTTPServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGWebLogger.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IGWebLoggerExample/Pods-IGWebLoggerExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -330,12 +342,15 @@
 			baseConfigurationReference = F78C1041BD5641FBBB470F83 /* Pods-IGWebLoggerExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = E56PJSX4T7;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = IGWebLogger/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "hk.ignition.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = wildcard;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -345,12 +360,15 @@
 			baseConfigurationReference = 63759A48EEBFFEFD2F6C4415 /* Pods-IGWebLoggerExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = E56PJSX4T7;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = IGWebLogger/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "hk.ignition.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = wildcard;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
